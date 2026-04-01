@@ -16,7 +16,7 @@ function App() {
     setEmotion(null)
 
     try {
-      const res = await fetch(`${import.meta.env.VITE_API_URL}/recommend`, {
+      const res = await fetch("https://feelnima-backend.onrender.com/recommend", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ text }),
